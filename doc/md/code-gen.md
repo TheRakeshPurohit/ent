@@ -9,7 +9,7 @@ The project comes with a codegen tool called `ent`. In order to install
 `ent` run the following command:
 
 ```bash
-go get -d entgo.io/ent/cmd/ent
+go get entgo.io/ent/cmd/ent
 ``` 
 
 ## Initialize A New Schema
@@ -26,7 +26,7 @@ is to have an `ent` directory under the root directory of the project.
 
 ## Generate Assets
 
-After adding a few [fields](schema-fields.mdx) and [edges](schema-edges), you want to generate
+After adding a few [fields](schema-fields.mdx) and [edges](schema-edges.mdx), you want to generate
 the assets for working with your entities. Run `ent generate` from the root directory of the project,
 or use `go generate`:
 
@@ -60,7 +60,7 @@ go mod init <project>
 And then, re-run the following command in order to add `ent` to your `go.mod` file:
 
 ```console
-go get -d entgo.io/ent/cmd/ent
+go get entgo.io/ent/cmd/ent
 ```
 
 Add a `generate.go` file to your project under `<project>/ent`:
